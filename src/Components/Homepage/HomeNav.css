@@ -1,0 +1,9 @@
+.home-nav {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3%;
+}
+
+button {
+  margin: 1.5%;
+}

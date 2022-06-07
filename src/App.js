@@ -1,4 +1,8 @@
 import React, {useState, useEffect} from 'react';
+import { Route, Switch } from 'react-router-dom';
+import HomeNav from './Components/Homepage/HomeNav';
+import HomeContainer from './Components/Homepage/HomeContainer';
+import Form from './Components/Homepage/Form';
 import './App.css';
 
 function App() {
@@ -9,9 +13,18 @@ function App() {
 
   return (
     <div className="App">
-      //HomeNav
-      //HomeContainer
       <h1>Let's Go Boating!</h1>
+      <Switch>
+        <Route exact path="/" render={() => {
+          return (
+            <div>
+              <HomeNav />
+              <HomeContainer />
+              <Form />
+            </div>
+          )
+        }} />
+      </Switch>
     </div>
   );
 }

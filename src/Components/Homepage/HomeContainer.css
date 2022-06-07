@@ -1,4 +1,5 @@
-.main-page {
+.all-thumbnails {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }

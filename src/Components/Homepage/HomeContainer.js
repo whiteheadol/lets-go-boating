@@ -1,5 +1,6 @@
 import React from 'react';
-
+import RiverThumbnail from './RiverThumbnail';
+import './HomeContainer.css';
 
 const HomeContainer = ({ allRivers }) => {
 // Render a thumbnail for each piece in state
@@ -7,12 +8,18 @@ const HomeContainer = ({ allRivers }) => {
 
   const allThumbnails = allRivers.map(element => {
     return (
-      <p>river!</p>
+      <RiverThumbnail
+        key={element.id}
+        name={element.run_name}
+        river={element.river_name}
+        state={element.state}
+        image={element.img}
+      />
     )
   })
 
   return(
-    <div>
+    <div className="all-thumbnails">
       {allThumbnails}
     </div>
   )

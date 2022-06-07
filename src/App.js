@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React, {useState, useEffect} from 'react';
+import { Route, Switch } from 'react-router-dom';
+import HomeNav from './Components/Homepage/HomeNav';
+import HomeContainer from './Components/Homepage/HomeContainer';
+import Form from './Components/Homepage/Form';
 import './App.css';
 
 function App() {
+  // Fetch all data from API on load
+  // Hold the state of all rivers here
+
+  // define the ways in which you will change state (form inputs, favoriting...) using useState
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Let's Go Boating!</h1>
+      <Switch>
+        <Route exact path="/" render={() => {
+          return (
+            <div>
+              <HomeNav />
+              <HomeContainer />
+              <Form />
+            </div>
+          )
+        }} />
+      </Switch>
     </div>
   );
 }

@@ -21,14 +21,15 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Let's Go Boating!</h1>
       <Switch>
         <Route exact path="/" render={() => {
           return (
             <div>
               <HomeNav />
-              <HomeContainer allRivers={allRivers} />
-              <Form />
+              <div className="main-page">
+                <HomeContainer allRivers={allRivers} />
+                <Form />
+              </div>
             </div>
           )
         }} />

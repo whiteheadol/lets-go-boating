@@ -30,7 +30,11 @@ function App() {
               <HomeNav />
               <div className="main-page">
                 <HomeContainer allRivers={allRivers} />
-                <Form />
+                <Form
+                  setSeasonText={setSeasonText}
+                  setPermitBoolean={setPermitBoolean}
+                  permitBoolean={permitBoolean}
+                />
               </div>
             </div>
           )

@@ -13,9 +13,10 @@ function App() {
 
   const [allRivers, setRivers] = useState([]);
   const [filteredRivers, setFilteredRivers] = useState([]);
-  const [favRivers, setFavs] = useState([]);
+  const [favRivers, setFavRivers] = useState([]);
   const [seasonText, setSeasonText] = useState('any');
   const [permitBoolean, setPermitBoolean] = useState('false');
+  const [currentTrip, setCurrentTrip] = useState()
 
   // define the ways in which you will change state (form inputs, favoriting...) using useState
   useEffect(() => {

@@ -2,12 +2,11 @@ import React from 'react';
 import './Form.css';
 
 
-const Form = ({ setSeasonText, setPermitBoolean, permitBoolean }) => {
+const Form = ({ setSeasonText, setPermitBoolean, permitBoolean, filterRivers }) => {
   // bring the different ways in which you can setState in as props (probably destructure for ease)
   // invoke the set states here
   const submitFormHandler = (e) => {
     e.preventDefault();
-    // set seasonText and permitBoolean here
     // will filter from homepage and only pass the things to be rendered down to the container?
   }
 
@@ -50,7 +49,7 @@ const Form = ({ setSeasonText, setPermitBoolean, permitBoolean }) => {
         onChange={permitBooleanHandler}
       />
       <label for="permitBoolean">Check if you're open to lottery permits</label>
-      <button onClick={submitFormHandler} type="submit">Search!</button>
+      <button onClick={filterRivers} type="submit">Search!</button>
     </form>
   )
 }

@@ -71,6 +71,7 @@ function App() {
               <div className="main-page">
                 <HomeContainer
                   rivers={filteredRivers}
+                  setCurrentTrip={setCurrentTrip}
                 />
                 <Form
                   setSeasonText={setSeasonText}
@@ -86,7 +87,13 @@ function App() {
           render={({match}) => {
             return <div>
               <DetailsNav />
-              <Details />
+              <Details
+                currentTrip={currentTrip}
+                setCurrentTrip={setCurrentTrip}
+                setFavRivers={setFavRivers}
+                currentId={match.params.id}
+                allRivers={allRivers}
+              />
             </div>
           }}
         />

@@ -15,10 +15,10 @@ const Form = ({ setSeasonText, setPermitBoolean, permitBoolean, filterRivers }) 
   }
 
   const permitBooleanHandler = (e) => {
-    if (!permitBoolean) {
+    if (permitBoolean === 'false') {
       setPermitBoolean(e.target.value)
     } else {
-      setPermitBoolean(false)
+      setPermitBoolean("false")
     }
   }
 
@@ -45,7 +45,7 @@ const Form = ({ setSeasonText, setPermitBoolean, permitBoolean, filterRivers }) 
       <label for="selectMonth">What month would you like to go?</label>
       <input type="checkbox"
         name="permitBoolean"
-        value={true}
+        value="true"
         onChange={permitBooleanHandler}
       />
       <label for="permitBoolean">Check if you're open to lottery permits</label>

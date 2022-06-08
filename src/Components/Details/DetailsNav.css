@@ -1,0 +1,10 @@
+.details-nav {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3%;
+  align-items: flex-end;
+}
+
+.home-btn, .bl-btn {
+  margin: 1.5%;
+}

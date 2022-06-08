@@ -48,7 +48,7 @@ function App() {
               <HomeNav />
               <div className="main-page">
                 <HomeContainer
-                  allRivers={allRivers}
+                  rivers={filteredRivers}
                 />
                 <Form
                   setSeasonText={setSeasonText}

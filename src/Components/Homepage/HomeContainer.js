@@ -10,6 +10,7 @@ const HomeContainer = ({ rivers }) => {
     return (
       <RiverThumbnail
         key={element.id}
+        id={element.id}
         name={element.run_name}
         river={element.river_name}
         state={element.state}

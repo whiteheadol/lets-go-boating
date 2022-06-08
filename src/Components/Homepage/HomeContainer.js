@@ -2,11 +2,11 @@ import React from 'react';
 import RiverThumbnail from './RiverThumbnail';
 import './HomeContainer.css';
 
-const HomeContainer = ({ allRivers }) => {
+const HomeContainer = ({ rivers }) => {
 // Render a thumbnail for each piece in state
 // Clicking on a thumbnail will change the url to the river's dynamic id
 
-  const allThumbnails = allRivers.map(element => {
+  const allThumbnails = rivers.map(element => {
     return (
       <RiverThumbnail
         key={element.id}

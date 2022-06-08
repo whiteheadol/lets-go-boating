@@ -25,6 +25,7 @@ function App() {
       .then(data => {
         setFilteredRivers(data.rivers)
         setRivers(data.rivers)
+        setCurrentTrip(data.rivers[0])
       })
   }, [])
 

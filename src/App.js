@@ -3,6 +3,8 @@ import { Route, Switch } from 'react-router-dom';
 import HomeNav from './Components/Homepage/HomeNav';
 import HomeContainer from './Components/Homepage/HomeContainer';
 import Form from './Components/Homepage/Form';
+import Details from './Components/Details/Details';
+import DetailsNav from './Components/Details/DetailsNav'
 import './App.css';
 
 function App() {
@@ -78,6 +80,14 @@ function App() {
             </div>
           )
         }} />
+        <Route exact path="/:id"
+          render={({match}) => {
+            return <div>
+              <DetailsNav />
+              <Details />
+            </div>
+          }}
+        />
       </Switch>
     </div>
   );

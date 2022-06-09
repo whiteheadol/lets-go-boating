@@ -1,7 +1,48 @@
-.details-container {
-  border: 2px solid pink;
+.river-details {
+  align-items: center;
+  background-color: #F0F1EA;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  margin: 3em;
+}
+
+.river-backdrop {
+  align-items: center;
+  background-size: cover;
+  box-shadow: 0px 8px 15px #555667;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: center;
+  width: 80%;
+}
+
+.details-page {
+  background-color: #F0F1EA;
+  height: 100vh;
+}
+
+.details-text {
+  margin: 3em 5em 0 5em;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5em 2em 5em;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(4px);
+  border-radius: 5px;
+  color: black;
+  height: 80%;
+  width: 60%;
 }
 
 .trip-name {
   font-size: 1.4em;
+}
+
+.fav-btn {
+  /* text-align: center; */
+  width: 18em;
+  height: 10em;
 }

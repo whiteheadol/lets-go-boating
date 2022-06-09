@@ -3,6 +3,8 @@ import { Route, Switch } from 'react-router-dom';
 import HomeNav from './Components/Homepage/HomeNav';
 import HomeContainer from './Components/Homepage/HomeContainer';
 import Form from './Components/Homepage/Form';
+import Details from './Components/Details/Details';
+import DetailsNav from './Components/Details/DetailsNav'
 import './App.css';
 
 function App() {
@@ -11,9 +13,10 @@ function App() {
 
   const [allRivers, setRivers] = useState([]);
   const [filteredRivers, setFilteredRivers] = useState([]);
-  const [favRivers, setFavs] = useState([]);
+  const [favRivers, setFavRivers] = useState([]);
   const [seasonText, setSeasonText] = useState('any');
   const [permitBoolean, setPermitBoolean] = useState('false');
+  const [currentTrip, setCurrentTrip] = useState()
 
   // define the ways in which you will change state (form inputs, favoriting...) using useState
   useEffect(() => {
@@ -22,8 +25,13 @@ function App() {
       .then(data => {
         setFilteredRivers(data.rivers)
         setRivers(data.rivers)
+        setCurrentTrip(data.rivers[0])
       })
   }, [])
+
+  // useEffect(() => {
+  //   setFilteredRivers(allRivers)
+  // }, [permitBoolean] )
 
   // Create a method to filter all rivers based on the state properties updated by the form. Pass this information down as allRivers to HomeContainer
   // Would this let me remove the submit button from the Form component?
@@ -57,6 +65,12 @@ function App() {
     }
   };
 
+  // const resetForm = (e) => {
+  //   setPermitBoolean('true');
+  //   setSeasonText('any');
+  //   // filterRivers(e);
+  // }
+
   return (
     <div className="App">
       <Switch>
@@ -67,6 +81,7 @@ function App() {
               <div className="main-page">
                 <HomeContainer
                   rivers={filteredRivers}
+                  setCurrentTrip={setCurrentTrip}
                 />
                 <Form
                   setSeasonText={setSeasonText}
@@ -78,6 +93,24 @@ function App() {
             </div>
           )
         }} />
+        <Route exact path="/:id"
+          render={({match}) => {
+            return <div>
+              <DetailsNav
+                setPermitBoolean={setPermitBoolean}
+                setSeasonText={setSeasonText}
+                filterRivers={filterRivers}
+              />
+              <Details
+                currentTrip={currentTrip}
+                setCurrentTrip={setCurrentTrip}
+                setFavRivers={setFavRivers}
+                currentId={match.params.id}
+                allRivers={allRivers}
+              />
+            </div>
+          }}
+        />
       </Switch>
     </div>
   );

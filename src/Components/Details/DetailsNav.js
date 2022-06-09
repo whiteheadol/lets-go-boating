@@ -2,7 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './DetailsNav.css';
 
-const DetailsNav = () => {
+const DetailsNav = ({ setPermitBoolean, setSeasonText, filterRivers }) => {
+
+  // const resetForm = (e) => {
+  //   setPermitBoolean('true');
+  //   setSeasonText('any');
+  //   filterRivers(e);
+  // }
+
+  // onClick={(e) => resetForm(e)
+
   return(
     <div className="details-nav">
       <img src="" />

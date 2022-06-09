@@ -1,10 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-
-const BuckerListNav = () => {
+const BucketListNav = () => {
   return(
-
+    <div className="bl-nav">
+      <img src="" />
+      <h1>Let's Go Boating!</h1>
+      <Link to={`/`}><button className='home-btn'>Home</button></Link>
+    </div>
   )
 }
 
-export default BuckerListNav;
+export default BucketListNav;

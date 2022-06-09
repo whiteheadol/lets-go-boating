@@ -42,13 +42,13 @@ const Form = ({ setSeasonText, setPermitBoolean, permitBoolean, filterRivers }) 
         <option value="Nov">November</option>
         <option value="Dec">December</option>
       </select>
-      <label for="selectMonth">What month would you like to go?</label>
+      <label htmlFor="selectMonth">What month would you like to go?</label>
       <input type="checkbox"
         name="permitBoolean"
         value="true"
         onChange={permitBooleanHandler}
       />
-      <label for="permitBoolean">Check if you're open to lottery permits</label>
+      <label htmlFor="permitBoolean">Check if you're open to lottery permits</label>
       <button onClick={filterRivers} type="submit">Search!</button>
     </form>
   )

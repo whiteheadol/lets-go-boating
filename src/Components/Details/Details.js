@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './Details.css';
 
-const Details = ({ currentTrip, setCurrentTrip, setFavRivers, currentId, allRivers }) => {
+const Details = ({ currentTrip, setCurrentTrip, currentId, allRivers, setFavRivers, favRivers }) => {
   // bring in the setState that allows a user to add a trip to their bucket list here
   // allow it to change when that button is clicked
 
@@ -12,6 +12,10 @@ const Details = ({ currentTrip, setCurrentTrip, setFavRivers, currentId, allRive
         setCurrentTrip(data)
       })
   }, )
+
+  const addRiver = () => {
+    setFavRivers(favRivers => [...favRivers, currentTrip])
+  }
 
   return(
     <div className="details-container">
@@ -24,6 +28,7 @@ const Details = ({ currentTrip, setCurrentTrip, setFavRivers, currentId, allRive
       <p><strong>Put-in: </strong>{currentTrip.put_in}</p>
       <p><strong>Take-out: </strong>{currentTrip.take_out}</p>
       <p><strong>Wild and Scenic: </strong>{currentTrip.wild_and_scenic}</p>
+      <button onClick={addRiver}>Add this trip to your bucket list!</button>
     </div>
   )
 }

@@ -10,17 +10,14 @@ import BucketListNav from './Components/BucketList/BucketListNav';
 import './App.css';
 
 function App() {
-  // Fetch all data from API on load
-  // Hold the state of all rivers here
 
   const [allRivers, setRivers] = useState([]);
   const [filteredRivers, setFilteredRivers] = useState([]);
   const [favRivers, setFavRivers] = useState([]);
   const [seasonText, setSeasonText] = useState('any');
   const [permitBoolean, setPermitBoolean] = useState('false');
-  const [currentTrip, setCurrentTrip] = useState()
+  const [currentTrip, setCurrentTrip] = useState();
 
-  // define the ways in which you will change state (form inputs, favoriting...) using useState
   useEffect(() => {
     fetch("http://localhost:4000/api/v1/rivers")
       .then(response => response.json())
@@ -35,11 +32,8 @@ function App() {
   //   setFilteredRivers(allRivers)
   // }, [permitBoolean] )
 
-  // Create a method to filter all rivers based on the state properties updated by the form. Pass this information down as allRivers to HomeContainer
-  // Would this let me remove the submit button from the Form component?
   const filterRivers = (e) => {
     e.preventDefault();
-    // setFilteredRivers(allRivers)
     const helperArray = [];
     if (seasonText === 'any' && permitBoolean === 'true') {
       setFilteredRivers(allRivers)
@@ -97,7 +91,9 @@ function App() {
         render={() => {
           return <div>
             <BucketListNav />
-            <BucketListContainer />
+            <BucketListContainer
+              favRivers={favRivers}
+            />
           </div>
         }}
         />
@@ -115,6 +111,8 @@ function App() {
                 setFavRivers={setFavRivers}
                 currentId={match.params.id}
                 allRivers={allRivers}
+                setFavRivers={setFavRivers}
+                favRivers={favRivers}
               />
             </div>
           }}

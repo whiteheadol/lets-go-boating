@@ -1,5 +1,6 @@
 import React from 'react';
 import './HomeNav.css';
+import { Link } from 'react-router-dom';
 
 const HomeNav = () => {
 
@@ -7,7 +8,7 @@ const HomeNav = () => {
     <div className="home-nav">
       <img src="" />
       <h1>Let's Go Boating!</h1>
-      <button>Bucket List</button>
+      <Link to={`/list`}><button>Bucket List</button></Link>
     </div>
   )
 }

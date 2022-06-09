@@ -17,7 +17,7 @@ const DetailsNav = ({ setPermitBoolean, setSeasonText, filterRivers }) => {
       <img src="" />
       <h1>Let's Go Boating!</h1>
       <Link to={`/`}><button className='home-btn'>Home</button></Link>
-      <button className='bl-btn'>Bucket List</button>
+      <Link to ={`/list`}><button className='bl-btn'>Bucket List</button></Link>
     </div>
   )
 }

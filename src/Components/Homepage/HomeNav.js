@@ -6,9 +6,9 @@ const HomeNav = () => {
 
   return(
     <div className="home-nav">
-      <img src="" />
+      <img className="nav-image" src="https://p.kindpng.com/picc/s/173-1733025_rafting-kayaking-canoe-clip-art-rafting-silhouette-png.png" />
       <h1>Let's Go Boating!</h1>
-      <Link to={`/list`}><button>Bucket List</button></Link>
+      <Link to={`/list`}><button><strong>Bucket List</strong></button></Link>
     </div>
   )
 }

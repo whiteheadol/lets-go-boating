@@ -13,10 +13,6 @@ const Details = ({ currentTrip, setCurrentTrip, setFavRivers, currentId, allRive
       })
   }, )
 
-
-  // use params to fetch the specific trip needed, and display what I want to (again, if confused, refer to tomatillos functionality)
-  // add a route in the main app component to render the right thing!
-
   return(
     <div className="details-container">
       <p><strong className="trip-name">{currentTrip.run_name}, </strong>{currentTrip.river_name.join(', ')} | {currentTrip.state.join(' | ')}</p>

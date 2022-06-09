@@ -29,6 +29,10 @@ function App() {
       })
   }, [])
 
+  // useEffect(() => {
+  //   setFilteredRivers(allRivers)
+  // }, [permitBoolean] )
+
   // Create a method to filter all rivers based on the state properties updated by the form. Pass this information down as allRivers to HomeContainer
   // Would this let me remove the submit button from the Form component?
   const filterRivers = (e) => {
@@ -61,6 +65,12 @@ function App() {
     }
   };
 
+  // const resetForm = (e) => {
+  //   setPermitBoolean('true');
+  //   setSeasonText('any');
+  //   // filterRivers(e);
+  // }
+
   return (
     <div className="App">
       <Switch>
@@ -86,7 +96,11 @@ function App() {
         <Route exact path="/:id"
           render={({match}) => {
             return <div>
-              <DetailsNav />
+              <DetailsNav
+                setPermitBoolean={setPermitBoolean}
+                setSeasonText={setSeasonText}
+                filterRivers={filterRivers}
+              />
               <Details
                 currentTrip={currentTrip}
                 setCurrentTrip={setCurrentTrip}

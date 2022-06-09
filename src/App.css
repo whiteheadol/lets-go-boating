@@ -1,4 +1,10 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .main-page {
   display: flex;
   justify-content: center;
+  background-color: #F0F1EA;
+  /* margin: 0; */
 }

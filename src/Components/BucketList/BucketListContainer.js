@@ -1,5 +1,6 @@
 import React from 'react';
 import BucketListThumbnail from './BucketListThumbnail';
+import './BucketListContainer.css';
 
 const BucketListContainer = ({ favRivers, setCurrentTrip }) => {
   const favThumbnails = favRivers.map(element => {
@@ -11,15 +12,15 @@ const BucketListContainer = ({ favRivers, setCurrentTrip }) => {
         river={element.river_name}
         state={element.state}
         image={element.img}
+        season={element.season}
         setCurrentTrip={setCurrentTrip}
       />
     )
   })
 
   return(
-    <div>
-      <h2>Your Bucket List:</h2>
-      <div className="all-thumbnails">
+    <div className="bl-page">
+      <div className="fav-thumbnails">
         {favThumbnails}
       </div>
     </div>

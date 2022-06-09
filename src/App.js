@@ -99,7 +99,7 @@ function App() {
         />
         <Route exact path="/:id"
           render={({match}) => {
-            return <div>
+            return <div className="details-page">
               <DetailsNav
                 setPermitBoolean={setPermitBoolean}
                 setSeasonText={setSeasonText}

@@ -15,6 +15,7 @@ const HomeContainer = ({ rivers, setCurrentTrip }) => {
         river={element.river_name}
         state={element.state}
         image={element.img}
+        season={element.season}
         setCurrentTrip={setCurrentTrip}
       />
     )

@@ -1,10 +1,35 @@
 .bl-nav {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 3%;
+  justify-content: space-between;
+  margin: 0;
   align-items: center;
+  min-height: 8em;
+  background-color: #B4BA96;
+  box-shadow: 0px 0.2em 0.5em #555667;
 }
 
 button {
-  margin: 1.5%;
+  margin-right: 10em;
+  height: 4em;
+  width: 10em;
+  border: none;
+  border-radius: 1em;
+  box-shadow: 0px 0.5em 1em #555667;
+  font-size: 1em;
+}
+
+button:hover {
+  transform: scale(1.06);
+  transition: .6s;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3.4em;
+}
+
+.nav-image {
+  width: 10em;
+  margin-left: 10em;
+  border-radius: 1em;
 }

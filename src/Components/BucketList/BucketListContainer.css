@@ -1,0 +1,11 @@
+.fav-thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bl-page {
+  background-color: #F0F1EA;
+  height: 100vh;
+  margin: 0;
+}

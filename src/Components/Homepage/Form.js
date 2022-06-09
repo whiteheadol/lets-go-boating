@@ -24,7 +24,8 @@ const Form = ({ setSeasonText, setPermitBoolean, permitBoolean, filterRivers }) 
 
   return(
     <form>
-      <h4>Narrow down your trip search:</h4>
+      <p className="form-heading">Narrow down your trip search:</p>
+      <label htmlFor="selectMonth">What month would you like to go?</label>
       <select name="selectMonth"
         id="selectMonth"
         onChange={seasonChangeHandler}>
@@ -42,14 +43,13 @@ const Form = ({ setSeasonText, setPermitBoolean, permitBoolean, filterRivers }) 
         <option value="Nov">November</option>
         <option value="Dec">December</option>
       </select>
-      <label htmlFor="selectMonth">What month would you like to go?</label>
+      <label htmlFor="permitBoolean">Check if you're open to lottery permits</label>
       <input type="checkbox"
         name="permitBoolean"
         value="true"
         onChange={permitBooleanHandler}
       />
-      <label htmlFor="permitBoolean">Check if you're open to lottery permits</label>
-      <button onClick={filterRivers} type="submit">Search!</button>
+      <button onClick={filterRivers} type="submit" className="submit-btn" ><strong>Search!</strong></button>
     </form>
   )
 }

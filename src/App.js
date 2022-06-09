@@ -4,7 +4,9 @@ import HomeNav from './Components/Homepage/HomeNav';
 import HomeContainer from './Components/Homepage/HomeContainer';
 import Form from './Components/Homepage/Form';
 import Details from './Components/Details/Details';
-import DetailsNav from './Components/Details/DetailsNav'
+import DetailsNav from './Components/Details/DetailsNav';
+import BucketListContainer from './Components/BucketList/BucketListContainer';
+import BucketListNav from './Components/BucketList/BucketListNav';
 import './App.css';
 
 function App() {
@@ -75,8 +77,7 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/" render={() => {
-          return (
-            <div>
+          return <div>
               <HomeNav />
               <div className="main-page">
                 <HomeContainer
@@ -91,8 +92,15 @@ function App() {
                 />
               </div>
             </div>
-          )
         }} />
+        <Route exact path="/list"
+        render={() => {
+          return <div>
+            <BucketListNav />
+            <BucketListContainer />
+          </div>
+        }}
+        />
         <Route exact path="/:id"
           render={({match}) => {
             return <div>

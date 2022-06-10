@@ -90,6 +90,8 @@ function App() {
                   setPermitBoolean={setPermitBoolean}
                   permitBoolean={permitBoolean}
                   filterRivers={filterRivers}
+                  seasonText={seasonText}
+                  permitBoolean={permitBoolean}
                 />
               </div>
             </div>

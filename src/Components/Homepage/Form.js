@@ -24,7 +24,7 @@ const Form = ({ setSeasonText, setPermitBoolean, permitBoolean, filterRivers }) 
 
 // Set select value based on setSeasonText held in state
 // Look into selected attribute for options
-// Look into ability to click checkbox text also 
+// Look into ability to click checkbox text also
   return(
     <form>
       <p className="form-heading">Narrow down your trip search:</p>
@@ -48,14 +48,15 @@ const Form = ({ setSeasonText, setPermitBoolean, permitBoolean, filterRivers }) 
         <option value="Nov">November</option>
         <option value="Dec">December</option>
       </select>
-      <label htmlFor="permitBoolean">
+      <label htmlFor="permitBoolean" className="check-label">
+      Check if you're open to trips that require a lottery permit:
+      </label>
       <input type="checkbox"
+      className="checkbox"
       name="permitBoolean"
       value="true"
       onChange={permitBooleanHandler}
       />
-      Check if you're open to trips that require a lottery permit:
-      </label>
       <button onClick={filterRivers} type="submit" className="submit-btn" ><strong>Search!</strong></button>
     </form>
   )

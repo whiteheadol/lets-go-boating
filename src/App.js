@@ -7,6 +7,7 @@ import Details from './Components/Details/Details';
 import DetailsNav from './Components/Details/DetailsNav';
 import BucketListContainer from './Components/BucketList/BucketListContainer';
 import BucketListNav from './Components/BucketList/BucketListNav';
+import Error from './Components/Error/Error';
 import './App.css';
 
 function App() {
@@ -97,7 +98,7 @@ function App() {
           </div>
         }}
         />
-        <Route exact path="/:id"
+        <Route exact path="/rivers/:id"
           render={({match}) => {
             return <div className="details-page">
               <DetailsNav
@@ -117,6 +118,7 @@ function App() {
             </div>
           }}
         />
+        <Route path="*" component={Error} />
       </Switch>
     </div>
   );

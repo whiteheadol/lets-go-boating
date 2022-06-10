@@ -8,6 +8,7 @@ form {
   margin: 2em;
   border-radius: 1em;
   box-shadow: 0px 0.2em 0.5em #555667;
+  text-align: center;
 }
 
 input, select {
@@ -29,3 +30,12 @@ label {
   font-size: 2em;
   text-align: center;
 }
+
+.checkbox {
+  margin-top: 1em;
+  padding: 0%;
+}
+
+/* .check-label {
+  margin: 0;
+} */

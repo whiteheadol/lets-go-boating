@@ -17,6 +17,16 @@ const Details = ({ currentTrip, setCurrentTrip, currentId, allRivers, setFavRive
     setFavRivers(favRivers => [...favRivers, currentTrip])
   }
 
+  const checkIfFav = (currentTrip, favRivers) => {
+    let value = false;
+    favRivers.forEach(element => {
+      if (element.id === currentTrip.id) {
+        value = true;
+      }
+    })
+    return value;
+  }
+
   return(
     <div className="river-details">
       <div className="river-backdrop" style={{ backgroundImage: `url(${currentTrip.img})`}}>
@@ -30,7 +40,7 @@ const Details = ({ currentTrip, setCurrentTrip, currentId, allRivers, setFavRive
           <p><strong>Put-in: </strong>{currentTrip.put_in}</p>
           <p><strong>Take-out: </strong>{currentTrip.take_out}</p>
           <p><strong>Wild and Scenic: </strong>{currentTrip.wild_and_scenic}</p>
-          <button className="fav-btn" onClick={addRiver}><strong>Add this trip to your bucket list!</strong></button>
+          {!checkIfFav(currentTrip, favRivers) && <button className="fav-btn" onClick={addRiver}><strong>Add this trip to your bucket list!</strong></button>}
         </div>
       </div>
     </div>

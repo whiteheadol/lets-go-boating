@@ -1,4 +1,4 @@
-[
+{ "rivers" :[
   {
     "id": "1",
     "run_name": "Upper Salt Daily",
@@ -72,3 +72,4 @@
     "wild_and_scenic": "false"
   }
 ]
+}

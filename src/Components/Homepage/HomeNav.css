@@ -6,6 +6,9 @@
   min-height: 8em;
   background-color: #B4BA96;
   box-shadow: 0px 0.2em 0.5em #555667;
+  /* position: fixed;
+  width: 100vw;
+  top: 0; */
 }
 
 button {

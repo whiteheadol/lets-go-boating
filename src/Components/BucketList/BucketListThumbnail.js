@@ -8,7 +8,7 @@ const BucketListThumbnail = ({ name, river, state, image, id, season }) => {
     <Link to={`/${id}`} className="bl-thumbnail" id={id}>
       <div className="thumbnail-styling">
         <div>
-          <h3 className="thumbnail-title" >{name}, {river}</h3>
+          <h3 className="thumbnail-title" >{name}, {river.join(' | ')}</h3>
           <p>{state.join(' | ')}</p>
           <p>{season.join(' | ')}</p>
         </div>

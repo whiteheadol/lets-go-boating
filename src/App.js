@@ -18,14 +18,19 @@ function App() {
   const [seasonText, setSeasonText] = useState('any');
   const [permitBoolean, setPermitBoolean] = useState('false');
   const [currentTrip, setCurrentTrip] = useState();
+  const [error, setError] = useState(false)
 
   useEffect(() => {
     fetch("http://localhost:4000/api/v1/rivers")
       .then(response => response.json())
       .then(data => {
+        setError(false)
         setFilteredRivers(data.rivers)
         setRivers(data.rivers)
         setCurrentTrip(data.rivers[0])
+      })
+      .catch(err => {
+        setError(true)
       })
   }, [])
 
@@ -75,6 +80,7 @@ function App() {
           return <div>
               <HomeNav />
               <div className="main-page">
+                {error && <p className="load-error">We're so sorry - there was a problem loading your data. Please try again later!</p>}
                 <HomeContainer
                   rivers={filteredRivers}
                   setCurrentTrip={setCurrentTrip}
@@ -84,6 +90,8 @@ function App() {
                   setPermitBoolean={setPermitBoolean}
                   permitBoolean={permitBoolean}
                   filterRivers={filterRivers}
+                  seasonText={seasonText}
+                  permitBoolean={permitBoolean}
                 />
               </div>
             </div>

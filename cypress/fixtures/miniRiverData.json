@@ -1,0 +1,75 @@
+{ "rivers" :[
+  {
+    "id": "1",
+    "run_name": "Upper Salt Daily",
+    "river_name": ["Salt River"],
+    "state": ["AZ"],
+    "difficulty": ["III", "IV"],
+    "permit_by_lottery": "false",
+    "season": ["Feb", "Mar", "Apr", "May"],
+    "does_it_actually_run": "No upstream dam. It runs more often than not, but the season is short and volatile. On bad years, there might be no season, and on good years there might be a three month season at most.",
+    "length_in_days": ["0.5", "1"],
+    "length_in_miles": "9",
+    "put_in": "Hwy 60 (First Camp) is the most popular put-in, although putting in at Baptism Rapid slightly upstream is possible at higher flows.",
+    "take_out": "Hoodoo River Access",
+    "gauge": ["https://waterdata.usgs.gov/az/nwis/uv/?site_no=09497500&PARAmeter_cd=00065,00060"],
+    "recommended_flows": {
+      "minimum": "300 cfs",
+      "maximum": "8,000+ cfs"
+    },
+    "img": "https://www.outdoorproject.com/sites/default/files/styles/hero_image_desktop_2x/public/features/dsc_1527-2_0.jpg?itok=bglE2LF7",
+    "img_credit": "Outdoor Project",
+    "link_to_more_info": "https://www.americanwhitewater.org/content/River/view/river-detail/123/main",
+    "facts": ["While there is no lottery system for the daily run, you will need to purchase a daily permit for each person through the White Mountain Apache Tribe.", "There are a few sites along the river corridor that are off limits to non tribe members. Do you research, and respect this magical place."],
+    "wild_and_scenic": "false"
+  },
+  {
+    "id": "2",
+    "run_name": "Upper Salt Wilderness",
+    "river_name": ["Salt River"],
+    "state": ["AZ"],
+    "difficulty": ["III", "IV", "IV+"],
+    "permit_by_lottery": "true",
+    "season": ["Feb", "Mar", "Apr", "May"],
+    "does_it_actually_run": "No upstream dam. It runs more often than not, but the season is short and volatile. On bad years, there might be no season, and on good years there might be a three month season at most.",
+    "length_in_days": ["2", "3", "4", "5"],
+    "length_in_miles": "59",
+    "put_in": "Hwy 60",
+    "take_out": "Hwy 288",
+    "gauge": ["https://waterdata.usgs.gov/az/nwis/uv/?site_no=09497500&PARAmeter_cd=00065,00060"],
+    "recommended_flows": {
+      "minimum": "350 cfs",
+      "maximum": "8000 cfs"
+    },
+    "img": "https://cacreeks.com/photos/salt16.jpg",
+    "img_credit": "CA Creeks",
+    "link_to_more_info": "https://www.americanwhitewater.org/content/River/view/river-detail/123/main",
+    "facts": ["There are a few sites along the river corridor that are off limits to non tribe members. Do you research, and respect this magical place."],
+    "wild_and_scenic": "false"
+  },
+  {
+    "id": "3",
+    "run_name": "Browns Canyon National Monument",
+    "river_name": ["Arkansas River"],
+    "state": ["CO"],
+    "difficulty": ["III", "IV"],
+    "permit_by_lottery": "false",
+    "season": ["May", "Jun", "Jul", "Aug", "Sept"],
+    "does_it_actually_run": "This section reliably runs each summer due to the Voluntary Flow Management Program, although it usually drops to only the native flow around mid August. During some seasons, the native flow still makes for a fun trip, but during others this will mean very low water.",
+    "length_in_days": ["0.5", "1", "2"],
+    "length_in_miles": "13",
+    "put_in": "There are several options, although most boaters start in the town of Nathrop, CO. Fisherman\"s Bridge and Ruby Mountain are the most popular access points. Trip distance is calculated to Stone Bridge",
+    "take_out": "Hecla Junction and Stone Bridge are the most popular take-outs.",
+    "gauge": ["https://waterdata.usgs.gov/monitoring-location/07091200/#parameterCode=00060&period=P7D"],
+    "recommended_flows": {
+      "minimum": "250 cfs",
+      "maximum": "5500 cfs"
+    },
+    "img": "https://whitewatercolorado.com/wp-content/uploads/4203246.jpg",
+    "img_credit": "Kodi Rafting",
+    "link_to_more_info": "https://www.americanwhitewater.org/content/River/view/river-detail/358/main",
+    "facts": ["The recommended flows are quite generous. If you\"re unfamiliar with the run you will likely get hung up on the low end, and the high end will be quite exciting.", "There are many spots for camping along the river corridor if you plan to make this a two day trip. Be aware that many of these sites will be occupied by commercial trips during peak season and weekends."],
+    "wild_and_scenic": "false"
+  }
+]
+}

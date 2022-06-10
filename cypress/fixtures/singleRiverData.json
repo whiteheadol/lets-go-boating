@@ -1,0 +1,24 @@
+{
+  "id": "1",
+  "run_name": "Upper Salt Daily",
+  "river_name": ["Salt River"],
+  "state": ["AZ"],
+  "difficulty": ["III", "IV"],
+  "permit_by_lottery": "false",
+  "season": ["Feb", "Mar", "Apr", "May"],
+  "does_it_actually_run": "No upstream dam. It runs more often than not, but the season is short and volatile. On bad years, there might be no season, and on good years there might be a three month season at most.",
+  "length_in_days": ["0.5", "1"],
+  "length_in_miles": "9",
+  "put_in": "Hwy 60 (First Camp) is the most popular put-in, although putting in at Baptism Rapid slightly upstream is possible at higher flows.",
+  "take_out": "Hoodoo River Access",
+  "gauge": ["https://waterdata.usgs.gov/az/nwis/uv/?site_no=09497500&PARAmeter_cd=00065,00060"],
+  "recommended_flows": {
+    "minimum": "300 cfs",
+    "maximum": "8,000+ cfs"
+  },
+  "img": "https://www.outdoorproject.com/sites/default/files/styles/hero_image_desktop_2x/public/features/dsc_1527-2_0.jpg?itok=bglE2LF7",
+  "img_credit": "Outdoor Project",
+  "link_to_more_info": "https://www.americanwhitewater.org/content/River/view/river-detail/123/main",
+  "facts": ["While there is no lottery system for the daily run, you will need to purchase a daily permit for each person through the White Mountain Apache Tribe.", "There are a few sites along the river corridor that are off limits to non tribe members. Do you research, and respect this magical place."],
+  "wild_and_scenic": "false"
+}

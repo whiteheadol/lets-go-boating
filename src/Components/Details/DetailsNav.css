@@ -15,3 +15,30 @@
 .home-btn {
   margin-right: 10em;
 }
+
+@media screen and (max-width: 850px) {
+  .details-nav {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .details-nav {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-image {
+    display: none;
+  }
+
+  .bl-btn, .home-btn {
+    font-size: 0.6em;
+    padding: 0.2em;
+  }
+
+  .home-btn {
+    margin-left: 1em;
+  }
+}

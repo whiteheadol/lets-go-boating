@@ -3,7 +3,7 @@
   background-color: #B4BA96;
   box-shadow: 0px 0.2em 0.5em #555667;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 0;
   min-height: 8em;
 }
@@ -26,10 +26,31 @@ button:hover {
 
 h1 {
   font-size: 3.4em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .nav-image {
   border-radius: 1em;
   margin-left: 10em;
   width: 10em;
+}
+
+@media screen and (max-width: 850px) {
+  .home-nav {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home-nav {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-image {
+    display: none;
+  }
 }

@@ -3,7 +3,7 @@ import './Details.css';
 
 const Details = ({ currentTrip, setCurrentTrip, currentId, allRivers, setFavRivers, favRivers }) => {
   const [detailsError, setDetailsError] = useState(false)
-
+  
   useEffect(() => {
     fetch(`http://localhost:4000/api/v1/rivers/${currentId}`)
       .then(response => response.json())

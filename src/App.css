@@ -6,10 +6,25 @@
   background-color: #F0F1EA;
   display: flex;
   justify-content: center;
+  width: 100vw;
 }
 
 .load-error {
   font-size: 3em;
   padding: 1.4em;
   text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+  .main-page {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-page {
+    flex-direction: column;
+    width: 100%;
+  }
 }

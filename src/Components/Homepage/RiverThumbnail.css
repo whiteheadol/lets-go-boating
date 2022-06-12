@@ -6,6 +6,7 @@
   flex-direction: column;
   margin: 3%;
   min-height: 10%;
+  min-width: 18vw;
   text-align: center;
   width: 24%;
 }
@@ -36,4 +37,10 @@ a {
 .thumbnail-title {
   padding-left: 0.5em;
   padding-right: 0.5em;
+}
+
+@media screen and (max-width: 400px) {
+  .thumbnail {
+    font-size: 0.7em;
+  }
 }

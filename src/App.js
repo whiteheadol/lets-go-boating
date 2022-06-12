@@ -71,17 +71,17 @@ function App() {
               <HomeNav />
               <div className="main-page">
                 {error && <p className="load-error">We're so sorry - there was a problem loading your data. Please try again later!</p>}
+                <Form
+                setSeasonText={setSeasonText}
+                setPermitBoolean={setPermitBoolean}
+                permitBoolean={permitBoolean}
+                filterRivers={filterRivers}
+                seasonText={seasonText}
+                permitBoolean={permitBoolean}
+                />
                 <HomeContainer
                   rivers={filteredRivers}
                   setCurrentTrip={setCurrentTrip}
-                />
-                <Form
-                  setSeasonText={setSeasonText}
-                  setPermitBoolean={setPermitBoolean}
-                  permitBoolean={permitBoolean}
-                  filterRivers={filterRivers}
-                  seasonText={seasonText}
-                  permitBoolean={permitBoolean}
                 />
               </div>
             </div>

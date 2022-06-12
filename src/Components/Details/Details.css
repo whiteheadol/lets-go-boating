@@ -47,3 +47,9 @@
   margin-top: 2em;
   width: 18em;
 }
+
+@media screen and (max-width: 850px) {
+  .river-details {
+    width: 80%;
+  }
+}

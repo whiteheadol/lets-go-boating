@@ -3,7 +3,6 @@ import './BucketListThumbnail.css'
 import { Link } from 'react-router-dom';
 
 const BucketListThumbnail = ({ name, river, state, image, id, season }) => {
-// If need reference, look at tomatillos, similar functionality to the movie details page
   return(
     <Link to={`/rivers/${id}`} className="bl-thumbnail" id={id}>
       <div className="thumbnail-styling">

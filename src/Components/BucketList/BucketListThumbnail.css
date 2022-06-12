@@ -17,7 +17,7 @@
   justify-content: space-between;
 }
 
-.thumbnail:hover {
+.bl-thumbnail:hover {
   cursor: pointer;
   transform: scale(1.06);
   transition: .6s;

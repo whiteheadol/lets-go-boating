@@ -3,7 +3,6 @@ import './HomeNav.css';
 import { Link } from 'react-router-dom';
 
 const HomeNav = () => {
-
   return(
     <div className="home-nav">
       <img className="nav-image" src="https://p.kindpng.com/picc/s/173-1733025_rafting-kayaking-canoe-clip-art-rafting-silhouette-png.png" />

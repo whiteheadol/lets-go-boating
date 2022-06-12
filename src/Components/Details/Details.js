@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import './Details.css';
 
 const Details = ({ currentTrip, setCurrentTrip, currentId, allRivers, setFavRivers, favRivers }) => {
-  // bring in the setState that allows a user to add a trip to their bucket list here
-  // allow it to change when that button is clicked
   const [detailsError, setDetailsError] = useState(false)
 
   useEffect(() => {

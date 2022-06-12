@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   height: 90%;
-  justify-content: center;
+  justify-content: flex-start;
   width: 80%;
 }
 
@@ -25,15 +25,16 @@
 }
 
 .details-text {
-  margin: 3em 5em 0 5em;
-  display: flex;
-  flex-direction: column;
-  padding: 0 5em 2em 5em;
-  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 5px;
   color: black;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8em;
   height: 80%;
+  margin: 3em 5em 0 5em;
+  padding: 0 5em 2em 5em;
   width: 60%;
 }
 
@@ -42,7 +43,7 @@
 }
 
 .fav-btn {
-  /* text-align: center; */
+  height: 4em;
+  margin-top: 2em;
   width: 18em;
-  height: 10em;
 }

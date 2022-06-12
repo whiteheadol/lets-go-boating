@@ -34,10 +34,6 @@ function App() {
       })
   }, [])
 
-  // useEffect(() => {
-  //   setFilteredRivers(allRivers)
-  // }, [permitBoolean] )
-
   const filterRivers = (e) => {
     e.preventDefault();
     const helperArray = [];
@@ -66,12 +62,6 @@ function App() {
         setFilteredRivers(helperArray);
     }
   };
-
-  // const resetForm = (e) => {
-  //   setPermitBoolean('true');
-  //   setSeasonText('any');
-  //   // filterRivers(e);
-  // }
 
   return (
     <div className="App">
@@ -109,11 +99,7 @@ function App() {
         <Route exact path="/rivers/:id"
           render={({match}) => {
             return <div className="details-page">
-              <DetailsNav
-                setPermitBoolean={setPermitBoolean}
-                setSeasonText={setSeasonText}
-                filterRivers={filterRivers}
-              />
+              <DetailsNav />
               <Details
                 currentTrip={currentTrip}
                 setCurrentTrip={setCurrentTrip}

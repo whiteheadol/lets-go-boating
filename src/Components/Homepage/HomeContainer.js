@@ -3,8 +3,6 @@ import RiverThumbnail from './RiverThumbnail';
 import './HomeContainer.css';
 
 const HomeContainer = ({ rivers, setCurrentTrip }) => {
-// Render a thumbnail for each piece in state
-// Clicking on a thumbnail will change the url to the river's dynamic id
 
   const allThumbnails = rivers.map(element => {
     return (

@@ -1,11 +1,11 @@
 .details-nav {
+  align-items: center;
+  background-color: #B4BA96;
+  box-shadow: 0px 0.2em 0.5em #555667;
   display: flex;
   justify-content: flex-end;
   margin-bottom: 0;
-  align-items: center;
   min-height: 9em;
-  background-color: #B4BA96;
-  box-shadow: 0px 0.2em 0.5em #555667;
 }
 
 .bl-btn {

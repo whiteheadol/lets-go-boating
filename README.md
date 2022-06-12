@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Let's Go Boating
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img width="500" alt="river trip thumbnails" src="https://user-images.githubusercontent.com/96206823/173251180-485bae3b-1e78-4066-a316-42768a28d2ae.png">
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+  - [Introduction](#introduction)
+  - [Learning Goals](#learning-goals)
+  - [Technologies](#technologies)
+  - [Features](#features)
+  - [Page Demo](#page-demo)
+  - [Possible Future Extensions](#possible-future-extensions)
+  - [Set Up](#set-up)
+  - [Contributors](#contributors)
+  - [Project Specs](#project-specs)
+  - [Additional Resources](#additional-resources)
 
-### `npm start`
+## Introduction
+Assigned as a final project in Turing's Front End Engineering Module 3, students were given free reign to make a project of their choice. I chose to make a rafting and kayaking 'trip finder' to help boaters plan their next adventure.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The project spec can be found [here](https://frontend.turing.edu/projects/module-3/showcase.html).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Personally, my biggest win was getting to work with a data set that I was so excited about. I feel that building out the API and its endpoints also gave me a deeper understanding of restful API behavior.
 
-### `npm test`
+My biggest challenge while completing the project was the strict timeframe. There are many extensions that I would love to add, but unfortunately they weren't possible in the few days I had to complete the api and application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Learning Goals
+  - Utilize modern React, including use of hooks and functional components.
+  - Incorporate React Router.
+  - Create a mini backend using Express.
+  - Implement end-to-end testing (including the interception of API calls) with Cypress.
 
-### `npm run build`
+## Technologies
+  - React/React Router
+  - Javascript
+  - JSX/HTML
+  - CSS
+  - Cypress
+  - Express/Restful APIs
+  - Webpack
+  - NPM
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
+- On page load, a user is presented with a collection of river trip thumbnails and a thumbnail filtering form. The form can be used to narrow down the trip search by month and whether or not a lottery permit is required.
+- Once a user sees an interesting trip, they can click on its thumbnail. If they want to add the trip to their bucket list, they can do so from the trip's details page.
+- From here, a user can go **Home** or view their saved **Bucket List**.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Page Demo
+Filtering trips:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Filtering Trips](https://media.giphy.com/media/pCXTztYYo1yhaYWlDR/giphy.gif)
 
-### `npm run eject`
+Viewing a trip's details and adding to Bucket List:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Viewing Trip Details](https://media.giphy.com/media/CJQ84FijIbnLqAto6p/giphy.gif)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Possible Future Extensions
+- I would love to add more inputs to the form, allowing a user to filter their search by other factors.
+- I also plan to deploy the API in the future so that the user doesn't have to run it on their local machine while using the application.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Set Up
+1. Clone the [backend](https://github.com/whiteheadol/river-api) repo to your local machine.
+2. `cd` into this backend directory.
+3. Run `npm start` to run the API on your local server. This will need to run the entire time you use the application.
+4. Visit [this](https://lets-go-boating.herokuapp.com/) deploy link to use the actual application.
+5. Enjoy exploring the different river trips!
 
-## Learn More
+## Contributors
+- Olivia Whitehead (GitHub: whiteheadol)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Specs
+- The spec for this project can be found [here]().
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- The backend API can be found [here]().
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Additional Resources
+- [Wireframe](https://excalidraw.com/#json=Xdu1BmB-g_SkYY-xZh9e-,rYzfPIXXR0-mbcpirTLRlQ)
+- [Project Board](https://github.com/whiteheadol/lets-go-boating/projects/1)
+- All photo credit can be found in the API dataset.

@@ -48,11 +48,11 @@ My biggest challenge while completing the project was the strict timeframe. Ther
 ## Page Demo
 Filtering trips:
 
-![Filtering Trips](https://media.giphy.com/media/1NsLtAmPAbZIs9WU9E/giphy.gif)
+![Filtering Trips](https://media.giphy.com/media/pCXTztYYo1yhaYWlDR/giphy.gif)
 
-Viewing a trip's details:
+Viewing a trip's details and adding to Bucket List:
 
-![Viewing Trip Details](https://media.giphy.com/media/1NsLtAmPAbZIs9WU9E/giphy.gif)
+![Viewing Trip Details](https://media.giphy.com/media/CJQ84FijIbnLqAto6p/giphy.gif)
 
 
 ## Possible Future Extensions
@@ -60,10 +60,10 @@ Viewing a trip's details:
 - I also plan to deploy the API in the future so that the user doesn't have to run it on their local machine while using the application.
 
 ## Set Up
-1. Clone the [backend] repo to your local machine.
+1. Clone the [backend](https://github.com/whiteheadol/river-api) repo to your local machine.
 2. `cd` into this backend directory.
 3. Run `npm start` to run the API on your local server. This will need to run the entire time you use the application.
-4. Visit [this]() deploy link to use the actual application.
+4. Visit [this](https://lets-go-boating.herokuapp.com/) deploy link to use the actual application.
 5. Enjoy exploring the different river trips!
 
 ## Contributors

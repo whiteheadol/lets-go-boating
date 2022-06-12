@@ -3,17 +3,6 @@ import './Form.css';
 
 
 const Form = ({ setSeasonText, setPermitBoolean, filterRivers, seasonText, permitBoolean }) => {
-  // bring the different ways in which you can setState in as props (probably destructure for ease)
-  // invoke the set states here
-
-  // useEffect(() => {
-  //
-  // })
-
-  const submitFormHandler = (e) => {
-    e.preventDefault();
-    // will filter from homepage and only pass the things to be rendered down to the container?
-  }
 
   const seasonChangeHandler = (e) => {
     setSeasonText(e.target.value)
@@ -27,9 +16,6 @@ const Form = ({ setSeasonText, setPermitBoolean, filterRivers, seasonText, permi
     }
   }
 
-// Set select value based on setSeasonText held in state
-// Look into selected attribute for options
-// Look into ability to click checkbox text also
   return(
     <form>
       <p className="form-heading">Narrow down your trip search:</p>

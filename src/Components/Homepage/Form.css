@@ -35,3 +35,15 @@ label {
   margin-top: 1em;
   padding: 0%;
 }
+
+@media screen and (max-width: 850px) {
+  form {
+    height: 30em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  form {
+    height: 40em;
+  }
+}

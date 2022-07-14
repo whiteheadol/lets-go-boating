@@ -21,7 +21,7 @@ function App() {
   const [error, setError] = useState(false)
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/v1/rivers")
+    fetch("https://river-api-22.herokuapp.com/api/v1/rivers")
       .then(response => response.json())
       .then(data => {
         setError(false)
